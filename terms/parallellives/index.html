@@ -3,152 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Use — ParallelLives</title>
+    <title>Terms of Use - ParallelLives</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            background-color: #0a0a0a;
-            color: #e0e0e0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background-color: #0A0A0F;
+            color: #F1F5F9;
             line-height: 1.7;
-            padding: 40px 20px;
-            max-width: 800px;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 720px;
             margin: 0 auto;
+            padding: 48px 24px;
         }
-        h1 {
-            color: #ffffff;
-            font-size: 2em;
-            margin-bottom: 8px;
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        .header h1 {
+            font-size: 32px;
             font-weight: 700;
-        }
-        h2 {
-            color: #ffffff;
-            font-size: 1.4em;
-            margin-top: 40px;
-            margin-bottom: 12px;
-            padding-bottom: 6px;
-            border-bottom: 1px solid #222;
-            font-weight: 600;
-        }
-        h3 {
-            color: #cccccc;
-            font-size: 1.15em;
-            margin-top: 28px;
+            color: #F1F5F9;
             margin-bottom: 8px;
+        }
+
+        .header .app-name {
+            color: #8B5CF6;
+        }
+
+        .header .updated {
+            font-size: 14px;
+            color: #94A3B8;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #A78BFA;
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #F1F5F9;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: #94A3B8;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        ul, ol {
+            margin-bottom: 16px;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+        }
+
+        ol li {
+            counter-increment: item;
+        }
+
+        ol li::before {
+            content: counter(item) '.';
+            color: #8B5CF6;
+            font-weight: 600;
+            position: absolute;
+            left: 0;
+        }
+
+        ul li, ol li {
+            color: #94A3B8;
+            font-size: 15px;
+            padding: 4px 0 4px 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #8B5CF6;
+        }
+
+        strong {
+            color: #F1F5F9;
             font-weight: 600;
         }
-        p {
-            margin-bottom: 14px;
-            color: #c0c0c0;
+
+        .section {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            border: 1px solid rgba(139, 92, 246, 0.08);
         }
-        ul {
-            margin: 10px 0 18px 24px;
-            color: #c0c0c0;
+
+        .highlight {
+            background: rgba(139, 92, 246, 0.08);
+            border-left: 3px solid #8B5CF6;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
         }
-        li {
-            margin-bottom: 6px;
+
+        .highlight p {
+            margin-bottom: 0;
+            color: #A78BFA;
+            font-weight: 500;
         }
+
+        .contact {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(139, 92, 246, 0.15);
+        }
+
         a {
-            color: #6ea8fe;
+            color: #8B5CF6;
             text-decoration: none;
         }
+
         a:hover {
+            color: #A78BFA;
             text-decoration: underline;
         }
-        strong {
-            color: #e0e0e0;
+
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(139, 92, 246, 0.1);
+            color: #64748B;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h1>Terms of Use</h1>
+            <p class="app-name" style="font-size: 18px; font-weight: 600; margin-bottom: 4px;">ParallelLives</p>
+            <p class="updated">Last updated: April 2026</p>
+        </div>
 
-<h1>Terms of Use — ParallelLives</h1>
-<p><strong>Last updated:</strong> March 23, 2026</p>
-<p><strong>Developer:</strong> Dino Bozic (dinz)</p>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By downloading, installing, or using ParallelLives ("the App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the App.</p>
 
-<h2>1. Acceptance of Terms</h2>
-<p>By downloading, installing, or using ParallelLives ("the App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the App. We reserve the right to modify these terms at any time. Continued use of the App after changes constitutes acceptance of the updated terms.</p>
+        <h2>2. Description of Service</h2>
+        <p>ParallelLives is an entertainment app that uses AI to generate fictional alternate life scenarios. Users can discover, collect, and merge alternate life stories through a gacha-style mechanic. All generated content is fictional and for entertainment purposes only.</p>
 
-<h2>2. Description of Service</h2>
-<p>ParallelLives is a mobile application for iOS that generates alternate life scenarios for entertainment purposes. The App uses AI technology and pre-built content to create fictional what-if scenarios. All generated content is fictional and for entertainment only.</p>
+        <div class="highlight">
+            <p>All alternate lives generated by the app are entirely fictional. They are not predictions, advice, or representations of real outcomes.</p>
+        </div>
 
-<h2>3. Subscriptions and Billing</h2>
-<p>The App offers optional in-app purchases:</p>
-<ul>
-<li><strong>5 Portal Credits</strong> — $2.99 (one-time consumable)</li>
-<li><strong>20 Portal Credits</strong> — $7.99 (one-time consumable)</li>
-<li><strong>Multiverse Pass</strong> — $4.99/month (auto-renewable subscription, unlimited pulls and free merges)</li>
-</ul>
-<p>All purchases are billed through your Apple ID account via the App Store.</p>
-<ul>
-<li>Payment is charged to your Apple ID account at confirmation of purchase.</li>
-<li>Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing period.</li>
-<li>Your account will be charged for renewal within 24 hours prior to the end of the current period at the same price.</li>
-<li>You can manage and cancel your subscription at any time through your Apple ID account settings or the App Store.</li>
-<li>Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription.</li>
-<li>All payments are processed by Apple. We do not have access to your payment information.</li>
-</ul>
-<p>Prices are in USD and may vary by region. Prices are subject to change, but we will notify you in advance of any price increases.</p>
+        <h2>3. In-App Purchases</h2>
+        <div class="section">
+            <h3>Portal Credits</h3>
+            <p>The App offers consumable in-app purchases ("Portal Credits") that allow you to generate additional alternate life scenarios beyond the free daily allowance.</p>
+            <ul>
+                <li><strong>5 Portal Credits</strong> - $2.99 USD</li>
+                <li><strong>20 Portal Credits</strong> - $7.99 USD</li>
+            </ul>
 
-<h2>4. Free Features and Limitations</h2>
-<p>The App provides 1 free portal pull per day. Additional pulls and merges require purchased credits or an active Multiverse Pass subscription. Free usage resets daily at midnight local time.</p>
+            <h3>Infinite Pass (Subscription)</h3>
+            <p>The App offers an auto-renewable subscription ("Infinite Pass") at $4.99 USD per month that provides unlimited portal pulls and free merges.</p>
+            <ul>
+                <li>Payment is charged to your Apple ID account at confirmation of purchase</li>
+                <li>Subscription automatically renews unless canceled at least 24 hours before the end of the current period</li>
+                <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
+                <li>You can manage and cancel subscriptions in your Apple ID account settings</li>
+                <li>Any unused portion of a free trial period is forfeited upon purchasing a subscription</li>
+            </ul>
 
-<h2>5. AI-Generated Content</h2>
-<p>Life scenarios generated by the App are entirely fictional and created for entertainment purposes. They do not represent real outcomes, predictions, or advice. You should not rely on any generated content for making real-life decisions.</p>
+            <h3>Refunds</h3>
+            <p>All purchases are processed by Apple. To request a refund, contact Apple Support or visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+        </div>
 
-<h2>6. User Responsibilities</h2>
-<p>By using the App, you agree to:</p>
-<ul>
-<li>Use the App only for lawful purposes and in accordance with these Terms.</li>
-<li>Not attempt to reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code of the App.</li>
-<li>Not interfere with or disrupt the App's functionality or servers.</li>
-<li>Not use automated systems or bots to access the App.</li>
-<li>Not reproduce, distribute, or create derivative works based on the App without prior written consent.</li>
-<li>Comply with all applicable local, state, national, and international laws and regulations.</li>
-</ul>
+        <h2>4. Gacha Mechanics</h2>
+        <div class="section">
+            <p>ParallelLives uses a randomized gacha system for generating alternate lives with varying rarity tiers. Please be aware of the following:</p>
+            <ul>
+                <li>Results are randomized -- higher rarity outcomes are less likely</li>
+                <li>The app includes a pity system that guarantees higher rarity outcomes after a set number of pulls (30 for Epic, 90 for Legendary)</li>
+                <li>Purchasing credits does not guarantee any specific outcome or rarity</li>
+                <li>Generated content is procedurally created and may vary each time</li>
+            </ul>
+            <p>Drop rate information is displayed within the app. You are encouraged to review it before making purchases.</p>
+        </div>
 
-<h2>7. Intellectual Property</h2>
-<p>All content, features, and functionality of the App — including but not limited to text, graphics, logos, icons, images, audio, software, and the overall design — are the exclusive property of Dino Bozic (dinz) and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.</p>
-<p>You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms.</p>
+        <h2>5. User Conduct</h2>
+        <p>You agree not to:</p>
+        <ul>
+            <li>Reverse engineer, decompile, or disassemble the App</li>
+            <li>Attempt to exploit, hack, or manipulate the gacha system or credit mechanics</li>
+            <li>Use the App for any unlawful purpose</li>
+            <li>Redistribute or resell any content generated by the App</li>
+        </ul>
 
-<h2>8. Disclaimers</h2>
-<p>THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
-<p>We do not warrant that the App will be uninterrupted, error-free, secure, or free of viruses or other harmful components. All AI-generated content is fictional and provided for entertainment purposes only.</p>
+        <h2>6. Intellectual Property</h2>
+        <p>The App, its design, code, and branding are the intellectual property of the developer. AI-generated content within the App is provided for personal entertainment use. You may share generated life cards via the in-app share feature for personal, non-commercial purposes.</p>
 
-<h2>9. Limitation of Liability</h2>
-<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL DINO BOZIC (DINZ), ITS AFFILIATES, OR ITS LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:</p>
-<ul>
-<li>Your access to or use of (or inability to access or use) the App.</li>
-<li>Any conduct or content of any third party in connection with the App.</li>
-<li>Any content obtained from the App.</li>
-<li>Unauthorized access, use, or alteration of your data or content.</li>
-</ul>
-<p>Our total liability for any claims arising from or related to these Terms or the App shall not exceed the amount you have paid us in the twelve (12) months preceding the claim.</p>
+        <h2>7. AI-Generated Content</h2>
+        <div class="section">
+            <p>Content in ParallelLives is generated using artificial intelligence. As such:</p>
+            <ul>
+                <li>Generated lives are entirely fictional and should not be taken as real advice or predictions</li>
+                <li>The developer is not responsible for the specific content of AI-generated scenarios</li>
+                <li>Content may occasionally be unexpected or unusual due to the nature of AI generation</li>
+                <li>The App applies content filtering, but no filter is perfect</li>
+            </ul>
+        </div>
 
-<h2>10. Indemnification</h2>
-<p>You agree to indemnify, defend, and hold harmless Dino Bozic (dinz) from and against any claims, liabilities, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or related to your use of the App or violation of these Terms.</p>
+        <h2>8. Data &amp; Privacy</h2>
+        <p>Your use of the App is also governed by our <a href="https://dinzzz.github.io/app-privacy/parallellives/">Privacy Policy</a>. In summary: we collect no personal data, and all app data is stored locally on your device.</p>
 
-<h2>11. Termination</h2>
-<p>We may terminate or suspend your access to the App at any time, without prior notice or liability, for any reason, including if you breach these Terms. Upon termination, your right to use the App will immediately cease.</p>
-<p>You may terminate your use of the App at any time by deleting it from your device and canceling any active subscriptions through your Apple ID account settings.</p>
+        <h2>9. Disclaimer of Warranties</h2>
+        <p>The App is provided "as is" without warranties of any kind, either express or implied. We do not guarantee that the App will be uninterrupted, error-free, or free of harmful components. Generated content is for entertainment only and should not be relied upon for life decisions.</p>
 
-<h2>12. Governing Law</h2>
-<p>These Terms shall be governed by and construed in accordance with the laws of the Republic of Croatia, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in Zagreb, Croatia.</p>
+        <h2>10. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App, including but not limited to loss of data or purchases.</p>
 
-<h2>13. Severability</h2>
-<p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect.</p>
+        <h2>11. Account Deletion</h2>
+        <p>You can delete all your data at any time through Settings &gt; Delete Account. This action permanently removes all locally stored data including your profile, collection, and credits. This cannot be undone.</p>
 
-<h2>14. Entire Agreement</h2>
-<p>These Terms, together with our <a href="../../parallellives/">Privacy Policy</a>, constitute the entire agreement between you and us regarding the App and supersede all prior agreements and understandings.</p>
+        <h2>12. Modifications</h2>
+        <p>We reserve the right to modify these Terms of Use at any time. Changes will be reflected by updating the date at the top of this page. Continued use of the App after changes constitutes acceptance of the new terms.</p>
 
-<h2>15. Contact</h2>
-<p>If you have questions about these Terms of Use:</p>
-<p><strong>Email:</strong> <a href="mailto:dino@dinz.dev">dino@dinz.dev</a></p>
-<p><strong>Privacy Policy:</strong> <a href="../../parallellives/">dinzzz.github.io/app-privacy/parallellives/</a></p>
+        <h2>13. Governing Law</h2>
+        <p>These terms shall be governed by and construed in accordance with the laws of the Republic of Croatia, without regard to conflict of law provisions.</p>
 
+        <h2>14. Apple's Standard EULA</h2>
+        <p>In addition to these terms, your use of the App is subject to Apple's Standard End User License Agreement (EULA) available at <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal</a>.</p>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>If you have questions about these Terms of Use:</p>
+            <p><strong>Email:</strong> <a href="mailto:dino@dinz.dev">dino@dinz.dev</a></p>
+        </div>
+
+        <div class="footer">
+            <p>ParallelLives &middot; com.dinz.parallellives</p>
+        </div>
+    </div>
 </body>
 </html>
