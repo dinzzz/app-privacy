@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - ParallelLives</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
             background-color: #0A0A0F;
@@ -18,36 +13,16 @@
             line-height: 1.7;
             padding: 0;
         }
-
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 48px 24px;
-        }
-
+        .container { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
         .header {
             text-align: center;
             margin-bottom: 48px;
             padding-bottom: 32px;
             border-bottom: 1px solid rgba(139, 92, 246, 0.2);
         }
-
-        .header h1 {
-            font-size: 32px;
-            font-weight: 700;
-            color: #F1F5F9;
-            margin-bottom: 8px;
-        }
-
-        .header .app-name {
-            color: #8B5CF6;
-        }
-
-        .header .updated {
-            font-size: 14px;
-            color: #94A3B8;
-        }
-
+        .header h1 { font-size: 32px; font-weight: 700; color: #F1F5F9; margin-bottom: 8px; }
+        .header .app-name { color: #8B5CF6; }
+        .header .updated { font-size: 14px; color: #94A3B8; }
         h2 {
             font-size: 20px;
             font-weight: 600;
@@ -55,7 +30,6 @@
             margin-top: 36px;
             margin-bottom: 12px;
         }
-
         h3 {
             font-size: 16px;
             font-weight: 600;
@@ -63,26 +37,14 @@
             margin-top: 20px;
             margin-bottom: 8px;
         }
-
-        p {
-            color: #94A3B8;
-            margin-bottom: 16px;
-            font-size: 15px;
-        }
-
-        ul {
-            list-style: none;
-            margin-bottom: 16px;
-            padding-left: 0;
-        }
-
+        p { color: #94A3B8; margin-bottom: 16px; font-size: 15px; }
+        ul { list-style: none; margin-bottom: 16px; padding-left: 0; }
         ul li {
             color: #94A3B8;
             font-size: 15px;
             padding: 4px 0 4px 20px;
             position: relative;
         }
-
         ul li::before {
             content: '';
             position: absolute;
@@ -93,12 +55,7 @@
             border-radius: 50%;
             background-color: #8B5CF6;
         }
-
-        strong {
-            color: #F1F5F9;
-            font-weight: 600;
-        }
-
+        strong { color: #F1F5F9; font-weight: 600; }
         .section {
             background: rgba(255, 255, 255, 0.03);
             border-radius: 12px;
@@ -106,7 +63,6 @@
             margin: 24px 0;
             border: 1px solid rgba(139, 92, 246, 0.08);
         }
-
         .highlight {
             background: rgba(139, 92, 246, 0.08);
             border-left: 3px solid #8B5CF6;
@@ -114,29 +70,18 @@
             border-radius: 0 8px 8px 0;
             margin: 20px 0;
         }
-
         .highlight p {
             margin-bottom: 0;
             color: #A78BFA;
             font-weight: 500;
         }
-
         .contact {
             margin-top: 40px;
             padding-top: 24px;
             border-top: 1px solid rgba(139, 92, 246, 0.15);
         }
-
-        a {
-            color: #8B5CF6;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #A78BFA;
-            text-decoration: underline;
-        }
-
+        a { color: #8B5CF6; text-decoration: none; }
+        a:hover { color: #A78BFA; text-decoration: underline; }
         .footer {
             text-align: center;
             margin-top: 48px;
@@ -145,76 +90,212 @@
             color: #64748B;
             font-size: 13px;
         }
+        .toc { background: rgba(139, 92, 246, 0.04); border-radius: 12px; padding: 20px 24px; margin: 24px 0 32px; }
+        .toc h3 { margin-top: 0; color: #A78BFA; }
+        .toc ol { counter-reset: toc; padding-left: 0; list-style: none; }
+        .toc ol li { counter-increment: toc; padding: 4px 0 4px 28px; position: relative; }
+        .toc ol li::before { content: counter(toc) "."; position: absolute; left: 0; top: 4px; color: #8B5CF6; font-weight: 600; background: none; width: auto; height: auto; border-radius: 0; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Privacy Policy</h1>
-            <p class="app-name" style="font-size: 18px; font-weight: 600; margin-bottom: 4px;">ParallelLives</p>
-            <p class="updated">Last updated: April 2026</p>
-        </div>
+<div class="container">
 
-        <h2>Overview</h2>
-        <p>ParallelLives lets you explore alternate versions of your life across infinite parallel universes. We are committed to protecting your privacy. This policy explains how little data we collect -- which is essentially none.</p>
-
-        <div class="highlight">
-            <p>ParallelLives collects no personal data. All your information stays on your device.</p>
-        </div>
-
-        <h2>Data Collection</h2>
-        <div class="section">
-            <h3>Data We Collect</h3>
-            <p><strong>None.</strong> ParallelLives does not collect any personal data.</p>
-
-            <h3>Data We Do NOT Collect</h3>
-            <ul>
-                <li>We do not collect your name, email, or contact details</li>
-                <li>We do not track your location</li>
-                <li>We do not collect device identifiers or usage analytics</li>
-                <li>We do not create user profiles on any server</li>
-                <li>We do not use advertising or tracking SDKs</li>
-                <li>We do not send your profile or life data to external servers</li>
-            </ul>
-        </div>
-
-        <h2>How ParallelLives Works</h2>
-        <p><strong>Local Storage:</strong> Your profile information, discovered lives, collection data, and app preferences are stored locally on your device using iOS UserDefaults. This data never leaves your device.</p>
-        <p><strong>AI Generation:</strong> When generating alternate lives, the app sends minimal context to OpenAI's API to create creative content. No personally identifiable information is transmitted -- only the parameters needed to generate a life scenario.</p>
-        <p><strong>No Accounts Required:</strong> You do not need to create an account or sign in. There is no authentication system or user database.</p>
-
-        <h2>Third-Party Services</h2>
-        <div class="section">
-            <p><strong>Apple StoreKit:</strong> Used exclusively for processing in-app purchases (portal credits, Infinite Pass subscription). Apple handles all payment processing according to their privacy policy. We never see your payment details.</p>
-            <p><strong>OpenAI API:</strong> Used to generate alternate life scenarios. Requests contain only creative prompt parameters, not personal data. OpenAI's data usage policy applies to API interactions.</p>
-            <p style="margin-bottom: 0;"><strong>No Other Services:</strong> ParallelLives does not use analytics, crash reporting, advertising networks, or cloud storage services.</p>
-        </div>
-
-        <h2>Data Storage &amp; Security</h2>
-        <p><strong>Local Only:</strong> All app data (your profile, discovered lives, collection, credits) is stored locally on your device via UserDefaults. This data is sandboxed within the app.</p>
-        <p><strong>Deletion:</strong> You can delete all your data at any time through Settings &gt; Delete Account. Uninstalling the app also removes all stored data.</p>
-
-        <h2>Children's Privacy</h2>
-        <p>ParallelLives does not knowingly collect personal information from children under 13. Since we collect no personal data from any user, the app is safe for all ages.</p>
-
-        <h2>International Users</h2>
-        <p>ParallelLives works identically worldwide. Since data is stored locally on your device, there are no international data transfer concerns.</p>
-
-        <h2>Your Rights</h2>
-        <p>Since we collect no data about you, there is nothing to access, correct, or delete on our end. You maintain complete control over your data at all times through the app's settings.</p>
-
-        <h2>Changes to This Policy</h2>
-        <p>If this privacy policy changes, we will update the date at the top of this page. Since our model is fundamentally built on not collecting data, significant changes are unlikely.</p>
-
-        <div class="contact">
-            <h2>Contact</h2>
-            <p>If you have questions about this privacy policy:</p>
-            <p><strong>Email:</strong> <a href="mailto:dino@dinz.dev">dino@dinz.dev</a></p>
-        </div>
-
-        <div class="footer">
-            <p>ParallelLives &middot; com.dinz.parallellives</p>
-        </div>
+    <div class="header">
+        <h1>Privacy Policy</h1>
+        <p class="app-name" style="font-size: 18px; font-weight: 600; margin-bottom: 4px;">ParallelLives</p>
+        <p class="updated">Effective Date: April 13, 2026 &middot; Last updated: April 13, 2026</p>
     </div>
+
+    <div class="highlight">
+        <p><strong>Summary (not a substitute for the full policy):</strong> ParallelLives is designed around data minimization. We do not require accounts, do not track you across apps or websites, do not sell your data, and most data stays on your device. When optional features use artificial intelligence, a minimal payload is sent to our service provider to generate a response. Full details below.</p>
+    </div>
+
+    <h2>1. Who We Are (Data Controller)</h2>
+    <p>ParallelLives (the "<strong>App</strong>") is published by <strong>Dino Bozic</strong>, operating as a sole trader under the name "dinz" (the "<strong>Developer</strong>," "<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>"), a natural person residing and registered in the Republic of Croatia. For the purposes of the EU General Data Protection Regulation (GDPR) and the UK GDPR, the Developer is the data controller for the limited personal data described in this policy. To contact the data controller, email <a href="mailto:dinz@dinzzz.com">dinz@dinzzz.com</a>.</p>
+
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ol>
+            <li>Who We Are (Data Controller)</li>
+            <li>Scope of This Policy</li>
+            <li>Information You Provide to the App</li>
+            <li>Information the App Generates on Your Device</li>
+            <li>Information Processed by Third Parties on Our Behalf</li>
+            <li>Information We Do <em>Not</em> Collect</li>
+            <li>Legal Bases for Processing (EEA/UK)</li>
+            <li>How We Use Information</li>
+            <li>AI-Generated Content and Model Providers</li>
+            <li>In-App Purchases and Subscriptions</li>
+            <li>Analytics, Crash Reporting, and Diagnostics</li>
+            <li>Data Retention and Deletion</li>
+            <li>International Transfers</li>
+            <li>Security</li>
+            <li>Your Rights (EEA, UK, Switzerland)</li>
+            <li>Your Rights (California &mdash; CCPA/CPRA)</li>
+            <li>Your Rights (Other U.S. States)</li>
+            <li>Children's Privacy</li>
+            <li>Do Not Track and Global Privacy Control</li>
+            <li>Cookies and Similar Technologies</li>
+            <li>Third-Party Services and Links</li>
+            <li>Automated Decision-Making</li>
+            <li>Changes to This Policy</li>
+            <li>Contact and Complaints</li>
+        </ol>
+    </div>
+
+    <h2>2. Scope of This Policy</h2>
+    <p>This policy applies exclusively to the ParallelLives iOS application distributed through the Apple App Store and to any websites we operate that explicitly reference it. It does not apply to third-party services (including the Apple App Store, Apple's in-app purchase system, or any external links) whose privacy practices are governed by their own policies. If there is any inconsistency between this policy and Apple's App Store terms with respect to data Apple controls, Apple's terms prevail for that data.</p>
+
+    <h2>3. Information You Provide to the App</h2>
+    <p>During profile setup and normal use, you may voluntarily enter the following information, which is stored <strong>only on your device</strong> in Apple's local storage (<code>UserDefaults</code> and/or on-device database), unless an optional cloud-sync feature is explicitly enabled by you in a future release:</p>
+    <ul>
+        <li>A first name or nickname (free-text; you may enter anything, including a pseudonym)</li>
+        <li>An age or age range (used locally to tailor generated content)</li>
+        <li>A career or interest selection (used locally as a seed for life generation)</li>
+        <li>Any custom text or selections you provide within the App</li>
+        <li>Your preferences and in-App settings (theme, audio, notifications)</li>
+    </ul>
+    <p>You are not required to provide real identifying information. You may use a pseudonym. The App does not verify the accuracy of anything you provide, and the Developer is not responsible for consequences arising from information you choose to submit.</p>
+
+    <h2>4. Information the App Generates on Your Device</h2>
+    <p>As you use the App, it creates data locally, including:</p>
+    <ul>
+        <li>Your collection of generated "alternate lives," including their stories, stats, traits, and metadata</li>
+        <li>Gacha mechanics state: pull history, pity counters, merge history, fate card state, timeline chain progress, secret archive fragments, achievements</li>
+        <li>Credit balances, daily free-pull state, and purchase status (kept in sync with Apple's receipts)</li>
+        <li>Timestamps of in-App actions used to enforce daily limits and streaks</li>
+    </ul>
+    <p>All of the above is stored locally on your device. We do not receive a copy on our servers. Deleting or reinstalling the App permanently erases this data.</p>
+
+    <h2>5. Information Processed by Third Parties on Our Behalf</h2>
+    <p>To deliver specific features, limited data may be transmitted from your device to third-party processors acting on our behalf or under their own responsibility. The following table is exhaustive as of the effective date of this policy:</p>
+
+    <div class="section">
+        <h3>Apple Inc.</h3>
+        <p>Apple processes your App Store account and in-app purchase information in order to deliver the App and process transactions. We receive only anonymized purchase receipts and subscription status via StoreKit; we do not receive your Apple ID, email, or payment instrument. See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+    </div>
+
+    <div class="section">
+        <h3>AI Model Providers (optional feature)</h3>
+        <p>When AI-generated content is enabled (for example, to generate a unique alternate life beyond the built-in library), the App sends a small structured prompt to our server endpoint at <code>api.dinzstudio.com</code>, which relays the prompt to a large-language-model provider (currently <strong>OpenAI, L.L.C.</strong>). The prompt includes only the seed data you entered (for example, first name or nickname, age range, career selection) and parameters needed to shape the response. It does <em>not</em> include your Apple ID, device identifiers, precise location, contacts, photos, or any data other than what is necessary to produce the requested generation. Our server does not persistently store prompts or responses beyond transient operational logs used to prevent abuse and stabilize the service. OpenAI processes content under its <a href="https://openai.com/policies/api-data-usage-policies/">API Data Usage Policies</a>; as of the effective date, API content is not used to train OpenAI's models. If this feature is disabled or unavailable in your region, no data is transmitted for this purpose.</p>
+    </div>
+
+    <div class="section">
+        <h3>Crash and Diagnostic Services (optional)</h3>
+        <p>If enabled, the App may use Apple's built-in crash reporting or a third-party provider (such as Firebase Crashlytics) to capture anonymized crash traces that help us fix defects. Crash payloads contain device model, OS version, anonymized device identifier (reset-able by you in iOS Settings), and a stack trace. They do not contain your collection or profile inputs. You may disable analytics sharing at any time in iOS Settings &rarr; Privacy &amp; Security &rarr; Analytics &amp; Improvements.</p>
+    </div>
+
+    <h2>6. Information We Do <em>Not</em> Collect</h2>
+    <p>We do not collect, and will never knowingly collect without a clear and separate opt-in:</p>
+    <ul>
+        <li>Your real name, email address, phone number, physical address, or government identifier</li>
+        <li>Your contacts, calendar, photos, health data, or messages</li>
+        <li>Your precise or coarse geographic location</li>
+        <li>Your advertising identifier (IDFA) &mdash; we do not use advertising and do not serve third-party ads</li>
+        <li>Cross-app or cross-website tracking data</li>
+        <li>Biometric data, face prints, or voice prints</li>
+        <li>Payment card numbers or bank information (Apple handles all payments)</li>
+    </ul>
+    <p>We do not sell, rent, lease, license, or otherwise disclose personal information to data brokers or advertising networks under any circumstances. We do not engage in "targeted advertising" or in the "sharing" of personal information for cross-context behavioral advertising as defined under the CCPA/CPRA.</p>
+
+    <h2>7. Legal Bases for Processing (EEA, UK, Switzerland)</h2>
+    <p>Where GDPR or UK GDPR applies, we rely on the following legal bases (Article 6(1) GDPR):</p>
+    <ul>
+        <li><strong>Performance of a contract</strong> &mdash; to provide the App and its core features when you install and use it (Art. 6(1)(b))</li>
+        <li><strong>Legitimate interests</strong> &mdash; to keep the App secure, prevent abuse of free-tier limits, and fix crashes (Art. 6(1)(f)); you may object at any time</li>
+        <li><strong>Consent</strong> &mdash; for optional diagnostics and for any optional feature expressly presented to you for approval (Art. 6(1)(a)); you may withdraw consent at any time</li>
+        <li><strong>Legal obligation</strong> &mdash; to meet tax, accounting, and consumer-protection obligations where applicable (Art. 6(1)(c))</li>
+    </ul>
+
+    <h2>8. How We Use Information</h2>
+    <p>We use the limited information described above solely to:</p>
+    <ul>
+        <li>Provide the core features of the App (generation, collection, merging, sharing)</li>
+        <li>Enforce free-tier limits and apply purchased credits or subscriptions</li>
+        <li>Fix defects, improve stability, and investigate suspected abuse</li>
+        <li>Comply with our legal obligations and defend our legal rights</li>
+    </ul>
+    <p>We do not use your data to build user profiles for advertising, to infer sensitive characteristics, to make consequential automated decisions about you, or to train AI models.</p>
+
+    <h2>9. AI-Generated Content and Model Providers</h2>
+    <p>Content generated by artificial intelligence is <strong>probabilistic and fictional</strong>. Outputs do not reflect real people, real events, or factual claims. Occasional outputs may be unexpected, imperfect, or in poor taste despite our safety filtering. We expressly disclaim any warranty regarding the accuracy, appropriateness, or reliability of AI-generated content. Do not submit confidential information, trade secrets, or personal data about identifiable third parties in any free-text field that is sent to an AI provider.</p>
+    <p>By using AI features, you acknowledge that (a) your prompts are transmitted to an AI model provider as described in Section 5, (b) the provider may retain prompts briefly for abuse monitoring, and (c) AI outputs are provided to you on an "as is" basis with no warranty.</p>
+
+    <h2>10. In-App Purchases and Subscriptions</h2>
+    <p>Purchases and subscriptions (including "Portal Credits" and the "Infinite Pass") are processed exclusively by Apple through StoreKit. We do not receive your payment card information. We receive a signed StoreKit receipt that confirms the transaction and, for subscriptions, the current status (active, in grace period, expired). Subscription management (including cancellation and refund requests) is handled in your Apple ID settings; see <a href="https://support.apple.com/HT202039">support.apple.com/HT202039</a>. Consumable purchases (for example, credit packs) are generally non-refundable once consumed; refund requests are subject to Apple's discretion under its published policies.</p>
+
+    <h2>11. Analytics, Crash Reporting, and Diagnostics</h2>
+    <p>At launch, the App ships without third-party advertising or behavioral analytics. We may enable optional, aggregated, privacy-preserving analytics or crash reporting in a future release. Any such change will be disclosed in this policy before activation. You will always be able to decline diagnostics sharing through iOS system settings.</p>
+
+    <h2>12. Data Retention and Deletion</h2>
+    <p>On-device data persists until you delete the App or reset it. Prompts transmitted to AI providers are transient and are not persistently stored on our servers. Aggregated, non-identifying telemetry (for example, counters) may be retained indefinitely. StoreKit receipt metadata (transaction IDs, product IDs, purchase timestamps) is retained for tax, accounting, and dispute-resolution purposes for the statutory period required under Croatian and EU law (typically up to eleven (11) years for accounting records).</p>
+    <p>To delete locally stored data, delete the App or use the "Reset All Data" option in Settings. For any data you believe we hold, contact <a href="mailto:dinz@dinzzz.com">dinz@dinzzz.com</a> and we will confirm within thirty (30) days.</p>
+
+    <h2>13. International Transfers</h2>
+    <p>The Developer is located in the Republic of Croatia (EU). When AI features are used, prompts may be transmitted to servers operated by our model provider, which may be located in the United States or other countries. Such transfers are governed by appropriate safeguards, including the European Commission's Standard Contractual Clauses and, where applicable, the EU-U.S. Data Privacy Framework. By using AI features you acknowledge that data may be processed outside the European Economic Area.</p>
+
+    <h2>14. Security</h2>
+    <p>We implement technical and organizational measures appropriate to the limited nature of the data we handle, including TLS transport encryption for any network communication, Apple's on-device data protection, and access controls on our server infrastructure. No method of electronic transmission or storage is perfectly secure. To the fullest extent permitted by law, we cannot and do not guarantee the absolute security of any data.</p>
+
+    <h2>15. Your Rights (EEA, UK, Switzerland)</h2>
+    <p>If you are located in the EEA, the United Kingdom, or Switzerland, you have the following rights with respect to personal data we process about you, subject to applicable exceptions:</p>
+    <ul>
+        <li><strong>Right of access</strong> (Art. 15 GDPR)</li>
+        <li><strong>Right to rectification</strong> (Art. 16)</li>
+        <li><strong>Right to erasure</strong> ("right to be forgotten," Art. 17)</li>
+        <li><strong>Right to restriction of processing</strong> (Art. 18)</li>
+        <li><strong>Right to data portability</strong> (Art. 20)</li>
+        <li><strong>Right to object</strong> to processing based on legitimate interests (Art. 21)</li>
+        <li><strong>Right to withdraw consent</strong> at any time where processing is based on consent (Art. 7(3))</li>
+        <li><strong>Right to lodge a complaint</strong> with a supervisory authority &mdash; for Croatia, the Croatian Personal Data Protection Agency (AZOP), <a href="https://azop.hr">azop.hr</a></li>
+    </ul>
+    <p>Because we store most data only on your device, you can typically exercise access, rectification, and erasure rights directly within the App. To exercise rights that require our involvement, contact <a href="mailto:dinz@dinzzz.com">dinz@dinzzz.com</a>. We will respond within one (1) month, extendable by two (2) additional months where necessary.</p>
+
+    <h2>16. Your Rights (California &mdash; CCPA/CPRA)</h2>
+    <p>If you are a California resident, you have the rights granted by the California Consumer Privacy Act, as amended by the California Privacy Rights Act (collectively, "CCPA/CPRA"), subject to exceptions:</p>
+    <ul>
+        <li><strong>Right to know</strong> the categories and specific pieces of personal information we have collected</li>
+        <li><strong>Right to delete</strong> personal information we have collected</li>
+        <li><strong>Right to correct</strong> inaccurate personal information</li>
+        <li><strong>Right to opt out of sale or sharing</strong> &mdash; as stated above, <strong>we do not sell or share personal information</strong> for cross-context behavioral advertising</li>
+        <li><strong>Right to limit use of sensitive personal information</strong> &mdash; we do not collect sensitive personal information</li>
+        <li><strong>Right to non-discrimination</strong> for exercising CCPA rights</li>
+    </ul>
+    <p>To exercise these rights, email <a href="mailto:dinz@dinzzz.com">dinz@dinzzz.com</a>. We will verify your request by asking you to confirm information you previously provided in the App. Categories of personal information collected in the last twelve (12) months are those listed in Sections 3 through 5 of this policy. Sources, business purposes, and recipients are also described there. We have not disclosed personal information for "business purposes" (as defined by CCPA) other than to the third parties listed in Section 5.</p>
+
+    <h2>17. Your Rights (Other U.S. States)</h2>
+    <p>Residents of states with comprehensive privacy laws &mdash; including Virginia (VCDPA), Colorado (CPA), Connecticut (CTDPA), Utah (UCPA), Iowa, Oregon, Texas (TDPSA), Tennessee, Montana, Indiana, Florida (FDBR), Delaware, New Hampshire, New Jersey, Minnesota, Maryland, and others &mdash; have rights broadly similar to those described in Sections 15 and 16. Contact <a href="mailto:dinz@dinzzz.com">dinz@dinzzz.com</a> to exercise any applicable right.</p>
+
+    <h2>18. Children's Privacy</h2>
+    <p>The App is rated 12+ in the Apple App Store due to infrequent/mild simulated gambling (gacha mechanics) and is <strong>not directed to children under thirteen (13)</strong>. We do not knowingly collect personal information from children under 13 (or under 16 where the GDPR applies with a higher age of consent set by a member state). If you are a parent or guardian and believe your child has provided personal information to the App, please contact <a href="mailto:dinz@dinzzz.com">dinz@dinzzz.com</a> and we will delete it. Parents and guardians are responsible for supervising minors' use of the App and in-app purchases.</p>
+
+    <h2>19. Do Not Track and Global Privacy Control</h2>
+    <p>Because we do not engage in cross-context behavioral tracking, "Do Not Track" (DNT) and "Global Privacy Control" (GPC) browser signals have no effect on the App. We treat all users as if they had sent a universal opt-out signal.</p>
+
+    <h2>20. Cookies and Similar Technologies</h2>
+    <p>The App itself does not use cookies. Websites we operate that explicitly reference the App use only strictly-necessary cookies or none at all, and do not deploy tracking pixels, third-party advertising cookies, or similar technologies.</p>
+
+    <h2>21. Third-Party Services and Links</h2>
+    <p>The App may link to third-party services (for example, Apple's App Store, developer blog, or policy pages). We are not responsible for the content, privacy practices, or security of third-party services. Your interactions with third parties are governed by their own policies.</p>
+
+    <h2>22. Automated Decision-Making</h2>
+    <p>The App uses procedural logic (gacha rarity, pity counters, fate cards) that is automated but does not produce legal or similarly significant effects on you within the meaning of GDPR Article 22. We do not perform profiling of users for consequential decisions.</p>
+
+    <h2>23. Changes to This Policy</h2>
+    <p>We may update this policy to reflect changes in the App, applicable law, or our practices. When we do, we will update the "Last updated" date at the top. If changes are material (for example, introducing a new category of data collection or a new processor), we will provide a reasonable notice through the App or this page before the change takes effect. Your continued use of the App after the effective date constitutes acceptance of the updated policy.</p>
+
+    <h2>24. Contact and Complaints</h2>
+    <div class="contact">
+        <p><strong>Data controller:</strong> Dino Bozic (dinz), Republic of Croatia</p>
+        <p><strong>Email:</strong> <a href="mailto:dinz@dinzzz.com">dinz@dinzzz.com</a></p>
+        <p><strong>Supervisory authority (EU):</strong> Croatian Personal Data Protection Agency (AZOP) &mdash; <a href="https://azop.hr">azop.hr</a></p>
+        <p>You have the right to lodge a complaint with a supervisory authority without contacting us first, although we encourage you to contact us so we may address your concern directly.</p>
+    </div>
+
+    <div class="footer">
+        <p>ParallelLives &middot; com.dinz.parallellives &middot; Published by Dino Bozic (dinz)</p>
+    </div>
+
+</div>
 </body>
 </html>
