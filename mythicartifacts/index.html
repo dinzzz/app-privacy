@@ -33,12 +33,12 @@
 <body>
 <h1>Privacy Policy — Vault of Aeon</h1>
 
-<p><strong>Last updated:</strong> May 2, 2026</p>
+<p><strong>Last updated:</strong> May 5, 2026</p>
 <p><strong>Developer:</strong> Dino Bozic (Dinz Studio)</p>
 
 <h2>Overview</h2>
 
-<p>Vault of Aeon is a collector game where you summon and collect mythological artifacts across 8 themed sets. This policy explains what data the app collects, why, and how it is handled. We designed Vault of Aeon to collect the minimum data necessary to let you sign in, sync your collection across devices, and process in-app purchases securely.</p>
+<p>Vault of Aeon is a collector game where you summon and collect mythological artifacts across 8 themed sets. This policy explains what data the app collects, why, and how it is handled. We designed Vault of Aeon to collect the minimum data necessary to let you sign in, sync your collection across devices, process in-app purchases securely, and operate the app reliably (crash reporting, analytics, push notifications).</p>
 
 <h2>Data We Collect</h2>
 
@@ -62,13 +62,32 @@
 
 <p>When you make an in-app purchase, Apple provides us with a signed purchase receipt. We validate the receipt on our server to grant you the corresponding gems, subscription benefits (Mythic Pass), or lifetime features (Eternal Vault). We store the transaction identifier and product identifier to prevent duplicate crediting. We <strong>never</strong> receive your credit card, billing address, or any other payment details — those remain entirely with Apple.</p>
 
+<h3>Analytics &amp; Crash Diagnostics</h3>
+
+<p>To improve the app and understand how features are used, Vault of Aeon uses Google Firebase services:</p>
+
+<ul>
+    <li><strong>Firebase Analytics</strong> — collects aggregated, pseudonymous usage events such as which screens you view, when you summon, when you complete a set, and when you make a purchase. No precise location, contacts, or browsing data is collected. Events are tied to a Firebase-generated installation ID and, when you are signed in, to your account's user ID.</li>
+    <li><strong>Firebase Crashlytics</strong> — when the app crashes or encounters a non-fatal error, an automated crash report is sent containing the device model, OS version, anonymized device identifier, app version, and a stack trace. We attach the user ID (if signed in) so we can investigate issues you report.</li>
+</ul>
+
+<p>We have configured Firebase to <strong>not collect IDFA</strong> (Identifier for Advertisers) and we do not use Firebase for advertising, ad personalization, or cross-app tracking. Data is processed by Google in accordance with the <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a> documentation.</p>
+
+<h3>Push Notifications</h3>
+
+<p>If you grant notification permission, we register a Firebase Cloud Messaging (FCM) token with our backend so we can send daily reset reminders, Fate Compass rotations, Vault Target alerts, and similar engagement messages. The FCM token is associated with an installation ID (a UUID generated locally on first launch) and, when you are signed in, with your account. You can revoke notification permission at any time in iOS Settings; we will stop sending pushes immediately.</p>
+
+<h3>Device Metadata</h3>
+
+<p>Alongside the FCM token, we store the platform (iOS), app version, build number, and locale so we can target pushes correctly (e.g., not send a "new feature" notification to users on an older version) and so analytics segmentation is meaningful. None of this is personally identifying.</p>
+
 <h3>Data We Do NOT Collect</h3>
 
 <ul>
     <li>We do not collect your real name, address, phone number, or date of birth</li>
     <li>We do not collect your location</li>
     <li>We do not collect contacts, calendar, photos, camera, or microphone data</li>
-    <li>We do not use analytics or third-party tracking SDKs</li>
+    <li>We do not use Identifier for Advertisers (IDFA) or similar advertising identifiers</li>
     <li>We do not use advertising networks or serve ads</li>
     <li>We do not sell or share your data with advertisers or data brokers</li>
     <li>We do not track you across other apps or websites</li>
@@ -77,34 +96,39 @@
 <h2>How Data Is Used</h2>
 
 <ul>
-    <li><strong>App functionality:</strong> to authenticate your account, sync your collection, and validate in-app purchases.</li>
+    <li><strong>App functionality:</strong> to authenticate your account, sync your collection, validate in-app purchases, and deliver notifications you have opted in to.</li>
     <li><strong>Service integrity:</strong> to prevent fraud, duplicate purchases, and abuse of the in-app economy.</li>
+    <li><strong>Diagnostics:</strong> to detect crashes and performance issues so we can fix them.</li>
+    <li><strong>Product improvement:</strong> to understand which features are used and how to make the game better.</li>
     <li><strong>Support:</strong> if you email us for help, we may look up your account by email to investigate the issue.</li>
 </ul>
 
-<p>We do not use your data for advertising, profiling, or any purpose unrelated to running Vault of Aeon.</p>
+<p>We do not use your data for advertising, ad personalization, profiling for marketing purposes, or any purpose unrelated to running Vault of Aeon.</p>
 
 <h2>Third-Party Services</h2>
 
 <p>Vault of Aeon relies on the following third parties only to provide the app:</p>
 
 <ul>
-    <li><strong>Apple (Sign in with Apple, StoreKit, iCloud receipt validation)</strong> — governed by Apple's Privacy Policy at <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
+    <li><strong>Apple (Sign in with Apple, StoreKit, push notifications, App Store receipt validation)</strong> — governed by Apple's Privacy Policy at <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
     <li><strong>Google (Sign in with Google)</strong> — only if you choose this sign-in method. Governed by Google's Privacy Policy at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
+    <li><strong>Google Firebase (Analytics, Crashlytics, Cloud Messaging)</strong> — analytics events, crash reports, and push token routing. Governed by the <a href="https://firebase.google.com/terms">Firebase Terms</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Data is processed in Google's infrastructure, primarily in the United States.</li>
     <li><strong>Railway (hosting provider)</strong> — our backend at api.dinz.io runs on Railway's infrastructure. Railway processes request traffic as a data processor; data in transit is encrypted via HTTPS.</li>
 </ul>
 
-<p>We do not use Firebase, Crashlytics, Amplitude, Mixpanel, Facebook SDK, AdMob, or any similar third-party analytics or advertising SDK.</p>
+<p>We do not use Mixpanel, Amplitude, Facebook SDK, AdMob, Adjust, AppsFlyer, or any advertising or attribution SDK.</p>
 
 <h2>Data Storage, Transfer &amp; Security</h2>
 
-<p><strong>On-device:</strong> App settings, audio preferences, and a cached copy of your collection are stored locally using iOS UserDefaults and the file system.</p>
+<p><strong>On-device:</strong> App settings, audio preferences, a cached copy of your collection, and an installation UUID are stored locally using iOS UserDefaults and the file system.</p>
 
-<p><strong>Backend:</strong> Account data, collection data, and purchase transaction IDs are stored in an encrypted PostgreSQL database hosted on Railway. All traffic between the app and our backend is encrypted over HTTPS (TLS 1.2+).</p>
+<p><strong>Backend:</strong> Account data, collection data, purchase transaction IDs, and FCM device tokens are stored in an encrypted PostgreSQL database hosted on Railway. All traffic between the app and our backend is encrypted over HTTPS (TLS 1.2+).</p>
+
+<p><strong>Firebase data:</strong> Analytics events and crash reports are stored in Google's Firebase infrastructure, primarily in the United States. Push tokens routed through FCM are likewise handled by Google.</p>
 
 <p><strong>Location of data:</strong> Our backend is currently hosted in the United States. If you use the app from another region, your data is transferred to and processed in the U.S. for the sole purpose of running the service.</p>
 
-<p><strong>Retention:</strong> We keep your account data for as long as your account is active. If you delete your account (see below), we delete all associated data within 30 days.</p>
+<p><strong>Retention:</strong> We keep your account data for as long as your account is active. If you delete your account (see below), we delete all associated data within 30 days. Firebase Analytics events are retained for up to 14 months by default; we do not extend this. Crashlytics retains crash reports for up to 90 days.</p>
 
 <h2>Your Rights</h2>
 
@@ -113,7 +137,8 @@
 <ul>
     <li><strong>Access</strong> the data associated with your account — email us to request a copy.</li>
     <li><strong>Correct</strong> inaccurate information — email us with corrections.</li>
-    <li><strong>Delete</strong> your account and all associated data — use <strong>Settings → Delete Account</strong> inside the app, or email us.</li>
+    <li><strong>Delete</strong> your account and all associated data — use <strong>Settings → Delete Account</strong> inside the app, or email us. This also unregisters your FCM token from our backend.</li>
+    <li><strong>Opt out of analytics:</strong> if you want to disable Firebase Analytics for your install, email us — we will mark your installation ID for exclusion. (We don't currently expose an in-app toggle.)</li>
     <li><strong>Stop using the service</strong> at any time by uninstalling the app.</li>
 </ul>
 
@@ -129,7 +154,13 @@
 
 <h2>Permissions</h2>
 
-<p>Vault of Aeon does not request access to your camera, microphone, photo library, contacts, calendar, location, or any other sensitive device feature.</p>
+<p>Vault of Aeon requests the following permission only:</p>
+
+<ul>
+    <li><strong>Notifications</strong> — optional. If granted, we send daily reset reminders, Fate Compass rotation alerts, and similar in-game messages. You can revoke this any time in iOS Settings.</li>
+</ul>
+
+<p>Vault of Aeon does <strong>not</strong> request access to your camera, microphone, photo library, contacts, calendar, location, or any other sensitive device feature.</p>
 
 <h2>Changes to This Policy</h2>
 
@@ -144,7 +175,7 @@
 
 <h2>Summary</h2>
 
-<p><strong>Vault of Aeon collects only what is needed to run the game:</strong> your email, name, and user ID (via Sign in with Apple or Google) so you can sign in and sync your collection; your collection and progress so it can move with you across devices; and Apple's purchase receipts so we can deliver what you buy. We use no advertising, no third-party analytics, and no cross-app tracking.</p>
+<p><strong>Vault of Aeon collects only what is needed to run the game:</strong> your email, name, and user ID (via Sign in with Apple or Google) so you can sign in and sync your collection; your collection and progress so it can move with you across devices; Apple's purchase receipts so we can deliver what you buy; pseudonymous analytics events and crash reports via Firebase so we can improve the game and fix bugs; and a push notification token so we can send the in-game reminders you've opted in to. We use no advertising, no ad identifiers, and no cross-app tracking.</p>
 
 <p>By using Vault of Aeon, you consent to this privacy policy.</p>
 </body>
